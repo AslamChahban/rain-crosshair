@@ -72,33 +72,7 @@ v0.7.0
 
 Hotkeys can be changed inside the app.
 
-## Build From Source
 
-Requirements:
-
-- Windows 10 or Windows 11
-- Node.js 20+
-- npm
-
-Install dependencies:
-
-```powershell
-npm install
-```
-
-Run Rain-Crosshair:
-
-```powershell
-npm start
-```
-
-Build the Windows installer:
-
-```powershell
-npm run dist
-```
-
-Build output is created inside the `release` folder.
 
 ## Overlay Notes
 
