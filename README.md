@@ -1,19 +1,32 @@
 # Rain-Crosshair
 
-Rain-Crosshair is a lightweight Windows crosshair overlay with custom crosshair creation, profiles, hotkeys, multi-monitor support, background mode, and automatic update notifications.
+<p align="center">
+  <img src="assets/logo.svg" alt="Rain-Crosshair logo" width="150">
+</p>
+
+<p align="center">
+  <strong>A lightweight and customizable Windows crosshair overlay.</strong>
+</p>
+
+<p align="center">
+  Custom profiles · Global hotkeys · Multi-monitor support · Background mode · Automatic updates
+</p>
+
+---
 
 ## Features
 
 - Custom crosshair creator
-- Live preview
+- Live preview while editing
 - Multiple saved crosshair profiles
 - Global hotkeys
 - Multi-monitor support
+- Position, size, gap, thickness, dot, ring, outline and rotation controls
 - Share/import crosshair codes
 - System tray background mode
 - Launch with Windows
 - Click-through always-on-top overlay
-- In-app update notifications
+- In-app GitHub update notifications
 - Windows installer
 
 ## Download
@@ -22,13 +35,13 @@ Download the latest version from:
 
 https://github.com/AslamChahban/rain-crosshair/releases/latest
 
-Download the `.exe` installer from the latest release.
+Download the latest `Rain-Crosshair-Setup-x.x.x.exe` installer from the release assets.
 
 ## Automatic Updates
 
-Rain-Crosshair checks GitHub Releases for new versions.
+Rain-Crosshair checks GitHub Releases for newer versions.
 
-When a new version is released, users can receive an update notification directly inside the app.
+When a new version is published, supported installed versions can show an update notification directly inside the app. Users can download the update and restart Rain-Crosshair to install it.
 
 Each release should contain:
 
@@ -36,11 +49,63 @@ Each release should contain:
 - `latest.yml`
 - `Rain-Crosshair-Setup-x.x.x.exe.blockmap`
 
-Example:
+Example version flow:
 
 ```text
-v0.5.0
-↓
-v0.5.1
-↓
-v0.5.2
+v0.6.8
+  ↓
+v0.6.9
+  ↓
+v0.7.0
+```
+
+> Updating repository files alone does not update installed copies. Publish a new GitHub Release with a higher app version.
+
+## Default Hotkeys
+
+| Action | Default |
+| --- | --- |
+| Toggle crosshair | `F6` |
+| Next profile | `F7` |
+| Previous profile | `F8` |
+| Show / hide Rain-Crosshair | `Ctrl + F6` |
+
+Hotkeys can be changed inside the app.
+
+## Build From Source
+
+Requirements:
+
+- Windows 10 or Windows 11
+- Node.js 20+
+- npm
+
+Install dependencies:
+
+```powershell
+npm install
+```
+
+Run Rain-Crosshair:
+
+```powershell
+npm start
+```
+
+Build the Windows installer:
+
+```powershell
+npm run dist
+```
+
+Build output is created inside the `release` folder.
+
+## Overlay Notes
+
+Rain-Crosshair is a visual overlay. It does not modify recoil, weapon accuracy, or game files, and it does not inject code into games.
+
+Some exclusive-fullscreen games, protected applications, Windows secure screens, or anti-cheat systems may prevent third-party overlays from being displayed.
+
+## License
+
+MIT
