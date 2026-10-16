@@ -1,102 +1,211 @@
 <p align="center">
-  <img src="assets/logo.svg" alt="Rain-Crosshair" width="120">
+  <img src="assets/logo.svg" alt="Rain-Crosshair" width="110">
 </p>
 
-# Rain-Crosshair
+<h1 align="center">Rain-Crosshair</h1>
 
-A small crosshair overlay for Windows. It draws a crosshair in the middle of your screen, on top of everything else, and your clicks pass straight through it.
+<p align="center">
+  <strong>Your crosshair. Your style.</strong><br>
+  Create your own crosshair, save your favorite designs, and switch between them while you play.
+</p>
 
-You design the crosshair in the app, save as many as you want, and switch between them with a hotkey. When you're not editing, it sits in the tray and stays out of the way.
+<p align="center">
+  <a href="https://github.com/AslamChahban/rain-crosshair/releases/latest"><strong>Download for Windows</strong></a>
+  &nbsp; · &nbsp;
+  <a href="#getting-started">Getting started</a>
+  &nbsp; · &nbsp;
+  <a href="#troubleshooting">Troubleshooting</a>
+  &nbsp; · &nbsp;
+  <a href="https://github.com/AslamChahban/rain-crosshair/issues">Report a problem</a>
+</p>
 
-<!-- Add a screenshot of the editor here, for example: ![Rain-Crosshair editor](assets/screenshot.png) -->
+<p align="center">
+  Windows 10 &amp; 11 · Custom profiles · Keyboard shortcuts · Multiple monitors
+</p>
 
-## Install
+---
 
-1. Download `Rain-Crosshair-Setup-x.x.x.exe` from the [latest release](https://github.com/AslamChahban/rain-crosshair/releases/latest).
-2. Run it and click through the installer.
+## Make it yours
 
-Windows 10 and 11 only.
+Rain-Crosshair places a customizable crosshair over your screen. Clicks pass straight through the overlay, so you can keep playing normally.
 
-Windows will probably show a SmartScreen warning about an unknown publisher. The installer isn't code-signed yet (certificates cost money), so Windows has never seen it before. If you want to check that your download is the real one, compare its hash with `SHA256SUMS.txt` from the same release:
+Design your crosshair with a live preview, save it as a profile, and let the app run quietly in your system tray.
 
-```powershell
-Get-FileHash .\Rain-Crosshair-Setup-x.x.x.exe -Algorithm SHA256
-```
+| Feature | What you can do |
+| --- | --- |
+| **Crosshair designer** | Customize colors, line lengths, thickness, gap, opacity, outlines, dots, rings, and rotation. |
+| **Presets and profiles** | Start with a preset, create your own designs, and favorite the ones you use most. |
+| **Keyboard shortcuts** | Toggle the overlay, cycle profiles, or switch directly to a specific crosshair. |
+| **Game profiles** | Automatically switch crosshairs when a configured game is focused. |
+| **Game-only mode** | Hide the overlay outside the games you configure. |
+| **Monitor and calibration controls** | Choose your display and fine-tune your crosshair's position. |
+| **Sharing and backups** | Share a design using a code, or back up your profiles and settings together. |
+| **Recovery tools** | Recover unfinished edits and restore recently deleted profiles. |
 
-Please don't turn off Defender or your antivirus to install it. A SmartScreen warning is only about reputation. If your antivirus reports a specific detection by name, that's a different thing: don't run the file and open an issue.
+## Getting started
 
-## Using it
+1. Open the **[latest release](https://github.com/AslamChahban/rain-crosshair/releases/latest)**.
+2. Under **Assets**, download the **Rain-Crosshair-Setup** installer—not the “Source code” ZIP.
+3. Run the installer and open **Rain-Crosshair**.
+4. Choose a preset or create a crosshair in **Designer**.
+5. Adjust it to your liking, then press **Save**.
+6. Run your game in **Borderless** or **Windowed Fullscreen** mode.
 
-Open the app, pick a preset or start from scratch, and move the sliders until it looks right. The preview in the app and the overlay on your screen both update as you change things. Press Save to keep it.
+**Download safely:** use the official release page linked above. If Windows displays a security warning, check the file and its publisher before continuing. Do not disable your antivirus to install the app.
 
-Closing the window doesn't quit Rain-Crosshair. It keeps running in the tray so the overlay and hotkeys still work. To close it properly, right-click the tray icon and choose Quit.
+## Keyboard shortcuts
 
-### Hotkeys
-
-| Action | Default |
+| Action | Default shortcut |
 | --- | --- |
 | Show or hide the crosshair | `F6` |
 | Next profile | `F7` |
 | Previous profile | `F8` |
 | Open or hide the app window | `Ctrl + F6` |
+| Save your edits in the app | `Ctrl + S` |
 
-You can change all of these on the Keybinds page.
+Change shortcuts on the **Shortcuts** page. Click **Set shortcut**, press your preferred keys, and save.
 
-### What you can change
+You can also assign a shortcut directly to a saved profile.
 
-Line length (horizontal and vertical separately), thickness, gap, rounded line ends, color and opacity, an outline, a center dot (round or square), a ring, rotation, and a pixel offset. Each of the four arms can be switched off on its own, so a T shape or a plain dot is just a setting. There are a few presets to start from if you don't want to build one yourself.
+## Set up your games
 
-You can also pick which monitor the crosshair shows up on, have the app start with Windows, and have it start minimized.
+1. Open **Game profiles**.
+2. Click **Browse / shortcut** to choose a game executable or desktop shortcut.
+3. Alternatively, launch your game and select it from **Running apps**.
+4. Choose the crosshair profile you want and click **Add rule**.
+5. Enable **Automatic profile switching**.
 
-### Sharing crosshairs
+Steam shortcuts may show several executable candidates. Choose the game itself, not its launcher or a helper program. If you are unsure, use **Running apps** while the game is open.
 
-The Share button copies your current crosshair as a short code that starts with `RAIN1:`. To use someone else's, paste their code into Share / Import on the Options page. Codes are checked when you import them, so a broken or edited one gets rejected instead of messing up your profiles.
+Enable **Hide outside your games** to show the overlay only while a configured game is focused.
 
-## Games and overlays
+> Automatic switching pauses while you have unfinished edits. Save or discard those edits to resume switching.
 
-The crosshair is a separate transparent window drawn on top of your screen. It doesn't read game memory, inject anything into a game, or touch game files, and it has no effect on recoil or accuracy. It's only a drawing.
+## Keep it running in the background
 
-Because of that, it can't draw over exclusive fullscreen. Run your game in borderless or windowed fullscreen. A few protected apps and Windows secure screens won't show it either.
+By default, closing the editor keeps Rain-Crosshair running in the system tray. Your overlay and global shortcuts stay available.
 
-I can't speak for any game's anti-cheat or rules. If you play something competitive, check whether overlays are allowed before you rely on this.
+To exit completely, right-click the tray icon and choose **Quit Rain-Crosshair**.
+
+You can change startup and tray preferences in **Settings**, including launching with Windows and starting minimized.
+
+## Share your crosshair
+
+Click **Share** to generate a code beginning with `RAIN1:`. Copy the code and send it to a friend.
+
+To import a design:
+
+1. Open **Settings → Share / Import**.
+2. Paste the crosshair code.
+3. Click **Import code**.
+
+## Back up and recover
+
+Use **Settings → Backup & restore → Export everything** to save your profiles and settings in one file.
+
+Keep that file somewhere safe. Restoring a backup replaces your current profiles and settings after confirmation.
+
+Made a mistake?
+
+- **Unfinished edits:** choose **Restore draft** when a recovery banner appears after reopening the app.
+- **Deleted profile:** click **Undo delete** or open **Settings → Recently deleted**.
+
+## Game compatibility
+
+Rain-Crosshair is a separate screen overlay. It does not inject code into games, read game memory, modify game files, or change recoil or weapon accuracy.
+
+For compatibility, use **Borderless** or **Windowed Fullscreen**. Exclusive fullscreen and some protected screens can prevent the overlay from appearing.
+
+Each game sets its own rules for third-party overlays. Check those rules before using Rain-Crosshair, especially in competitive play.
 
 ## Updates
 
-Rain-Crosshair checks GitHub Releases when it starts and every few hours after that. If there's a newer version you'll see a banner in the app: download it, then restart to install. You can also check by hand on the Options page.
+Rain-Crosshair periodically checks for new releases and shows a notification when an update is available.
+
+To update:
+
+1. Open the release page from the notification.
+2. Download the new installer.
+3. Quit Rain-Crosshair completely.
+4. Run the installer.
+
+You can also check manually in **Settings → Updates** or visit the **[latest release](https://github.com/AslamChahban/rain-crosshair/releases/latest)**.
 
 ## Troubleshooting
 
-**The crosshair doesn't show in my game.** Switch the game to borderless or windowed fullscreen. Overlays can't appear over exclusive fullscreen.
-
-**A hotkey does nothing.** Another program may already be using that key. Pick a different one on the Keybinds page.
-
-**The crosshair isn't exactly centered.** It's placed at the exact center of the monitor you chose, not the center of the game window. If your game window isn't centered on that monitor, use the offset sliders on the Position & Size page.
-
-**The overlay flickers or looks wrong on my PC.** The app turns off hardware acceleration to save memory. Some GPU and driver combinations don't like that. Right-click your Rain-Crosshair shortcut, open Properties, and add ` --enable-gpu` to the end of the Target field.
-
-## Building from source
-
 <details>
-<summary>For developers</summary>
+<summary><strong>The crosshair is not showing in my game</strong></summary>
 
-&nbsp;
-
-You need Windows 10 or 11, Node.js 20 or newer, and npm.
-
-```powershell
-npm install
-npm start          # run the app
-npm test           # unit tests
-npm run test:e2e   # opens real windows for a few seconds
-npm run dist       # build the installer into release/
-```
-
-Releases are built by GitHub Actions when you push a version tag, for example `v0.7.8`. The tag has to match the `version` in `package.json`. The workflow runs the tests, builds the installer, creates `SHA256SUMS.txt`, and uploads everything to the release, including `latest.yml` and the `.blockmap` file that the auto-updater needs.
-
-Editing files in the repo doesn't update anyone's installed copy. Installed apps only see a new version when you publish a release with a higher version number.
+- Make sure the overlay is enabled. Press `F6` if you use the default shortcut.
+- Switch the game to **Borderless** or **Windowed Fullscreen**.
+- Check that the correct monitor is selected in **Display**.
+- If **Hide outside your games** is enabled, make sure the game has a matching rule and is focused.
 
 </details>
 
+<details>
+<summary><strong>I cannot find my game when browsing</strong></summary>
+
+Use **Browse / shortcut** to select its desktop shortcut, including Steam `.url` shortcuts.
+
+If the shortcut opens a launcher or cannot be resolved, launch the game normally, click **Running apps**, and refresh the list.
+
+</details>
+
+<details>
+<summary><strong>A keyboard shortcut does not work</strong></summary>
+
+Windows or another app may already be using that combination.
+
+Open **Shortcuts**, check its status, choose another combination, and save. Rain-Crosshair must remain running for global shortcuts to work.
+
+</details>
+
+<details>
+<summary><strong>The crosshair is not centered where I want it</strong></summary>
+
+The crosshair is centered on your selected monitor, not on an individual game window.
+
+Check your display selection, then use **Calibration** to adjust its position. Click **Reset center** to remove the position offsets, then save the profile.
+
+</details>
+
+<details>
+<summary><strong>The overlay flickers or looks wrong</strong></summary>
+
+Try enabling hardware acceleration:
+
+1. Quit Rain-Crosshair completely.
+2. Right-click its Windows shortcut and open **Properties**.
+3. At the end of **Target**, add a space followed by `--enable-gpu`.
+4. If the executable path has quotation marks, add the option after the closing quotation mark.
+5. Apply the change and reopen the app using that shortcut.
+
+Remove the added option if it does not help.
+
+</details>
+
+<details>
+<summary><strong>I lost an edit or deleted a profile</strong></summary>
+
+If a recovery banner appears when you reopen the app, choose **Restore draft**.
+
+To recover a deleted profile, use **Undo delete** or open **Settings → Recently deleted**.
+
+</details>
+
+## Need help?
+
+**[Report a problem](https://github.com/AslamChahban/rain-crosshair/issues)** and include:
+
+- Your Rain-Crosshair version.
+- Your Windows version.
+- The game affected.
+- What happened and how to reproduce it.
+- A screenshot, if helpful.
+
+You can also export a report from **Diagnostics**. Review it before sharing.
+
 ## License
 
-MIT
+Rain-Crosshair is available under the [MIT License](LICENSE).
